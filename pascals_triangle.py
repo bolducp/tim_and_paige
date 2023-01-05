@@ -1,7 +1,9 @@
 class Solution:
     def generate(self, numRows):
-        print("pass")
-        pass
+        if numRows == 1:
+            return [[1]]
+        if numRows == 2:
+            return [[1], [1, 1]]
 
 
 
@@ -19,4 +21,4 @@ class Solution:
 
 if __name__ == "__main__":
    solution = Solution()
-   solution.generate(1)
+   print(solution.generate(2))
